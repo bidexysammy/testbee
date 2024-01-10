@@ -1,0 +1,35 @@
+<doctype html>
+<html>
+    <head></head>
+    <body>
+        <form method='post'>
+                <p>Welcome to your custom questions</p>
+                {% for quest in question %}
+                    <p>{{ quest.question_text}}</p>
+                    <p><input type='radio', name='{{quest.response}}' id='d'>{{quest.option_one}}</input></p>
+                    <p><input type='radio', name='{{quest.response}}'>{{quest.option_two}}</input></p>
+                    <p><input type='radio', name='{{quest.response}}'>{{quest.option_three}}</input></p>
+                    <p><input type='radio', name='{{quest.response}}'>{{quest.option_four}}</input></p>
+
+                {% endfor %}
+                <button onclick='clickMe'>Submit</button>
+            <div id='div1'></div>
+    
+        </form>
+        {%for quest in question%}
+            <script>
+                function clickMe() {
+                    var result = 0;
+                    var one = document.getElementById('one').value;
+                    var name = document.getElementByName('{{quest.response}}');
+                    for (var i = 0; i < name.length; i++) {
+                        if (name[i].checked == one[i])
+                            result = result + 1;
+                            document.getElementById("div1").innerHTML = f"your score is {result}";
+                        
+                    }
+                }   
+            </script>
+        {%endfor%}
+    </body>
+</html>

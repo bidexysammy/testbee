@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+    <script type='text/javascript'>
+        function myFunction() {
+            var radioa = document.getElementById("radioa");
+            var radiob = document.getElementById("radiob");
+            if (radioa.checked==true) {
+                window.location = 'C:/Users/admin/Desktop/assess/templates/main.html';
+            }
+            else if (radiob.checked==true) {
+                window.location = 'localhost:5000/main.html';
+            }
+        }
+    </script>
+
+    </head>
+    <body>
+        <h2> Welcome to Testbee</h2>
+        <div id='signup'>
+            <h3> sign up for better experience </h3>
+            <input type='text' placeholder='Firstname' value='Firstname'/>
+            <input type='text' placeholder='Lastname' value='Lastname'/>
+            <input type='text' placeholder='username' value='username'/>
+            <input type='password' placeholder='password' value='password'/>
+            <input type='password' placeholder='confirm password' value='confirmpassword'/>
+         <p> Please select that which concerns you</p>
+        <form method="post">
+            <input type='radio' id='radioa' name='selector' value='Breakfast'>Student</input>
+            <input type='radio' id='radiob' name='selector' value='Lunch'> Administrator </input>
+            <input type='button' value='submit' id='btn' onclick='myFunction()'/>
+        </form>
+        <p> Already have an account? </p>
+        <input type='button' value='signin'/>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function clear_out() {
+                document.getElementById('textarea').value == "";
+                document.getElementById('option').value == "";
+            }
+        </script>
+
+    </head>
+    <body>
+        <form method='post' action=''>
+            
+            <textarea id='textarea' name='textarea'>
+                Enter your question here...
+            </textarea>
+        
+            <p id='option'>
+                <input name='first'></input>
+                <br>
+                <br>
+                <input name='second'></input>
+                <br>
+                <br>
+                <input name='third'></input>
+                <br>
+                <br>
+                <input name='fourth'></input>
+            </p>    
+            <input type='submit' onclick='clear_out'/>
+        </form>
+    </body>
+</html>

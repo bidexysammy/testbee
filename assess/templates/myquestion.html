@@ -1,0 +1,23 @@
+<doctype html>
+<html>
+    <head></head>
+    <body>
+        <form method='post'>
+            <p>Welcome to your custom questions</p>
+            {% for quest in question %}
+                <p>{{ quest.question_text}}</p>
+
+            {%endfor%}
+            {%for opted in options%}
+                <select name='operator'>
+                    <option value='{{opted.option_one}}'>{{opted.option_one}}</option>
+                    <option value='{{opted.option_two}}'>{{opted.option_two}}</option>    
+                    <option value='{{opted.option_three}}'>{{opted.option_three}}</option>
+                    <option value='{{opted.option_four}}'>{{opted.option_four}}</option>    
+                </select>
+            {% endfor %}
+            <input type='submit'/>
+            <p> {{ result }} </p>
+        </form>
+    </body>
+</html>

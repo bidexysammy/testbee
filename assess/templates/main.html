@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+    <script type='text/javascript'>
+        function myFunction() {
+            var radioa = document.getElementById("radioa");
+            var radiob = document.getElementById("radiob");
+            if (radioa.checked==true) {
+                window.location = 'https://google.com';
+            }
+            else if (radiob.checked==true) {
+                window.location = 'https://facebook.com';
+            }
+        }
+    </script>
+
+    </head>
+    <body>
+        <h2> Welcome to testbee</h2>
+        <form method='post'>
+            <div id='signup'>
+                <h3> sign up for better experience </h3>
+                <input type='text' placeholder='username' value='username'/>
+                <input type='password' placeholder='password' value='password'/>
+                <input type='submit'/>
+            </div>
+        </form>
+    </body>
+</html>

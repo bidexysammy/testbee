@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2> Users List </h2>
+
+        <table style="width: 100%">
+            <tr>
+                <th> ID </th>
+                <th> RESULT</th>
+            </tr>
+            {% for answer in answers %}
+            <tr>
+                <td>{{answer.id}}</td>
+                <td>{{answer.result}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
