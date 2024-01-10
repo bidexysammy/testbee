@@ -1,2 +1,2 @@
 # testbee
-This is an API that can be used by employers and educational bodies to administer test by just typing their custom questions  in the question page. There are also questions made already for students who wish to test their knowledge on basic subjects
+This is an API that can be used by employers and educational bodies to administer test by just typing their custom questions  in the question page. There are also questions made already for students who wish to test their knowledge on basic subjects. These subjects include the common Mathematics, English and Reasoning. It designed to be user-friendly and the score appears immediately the test taker clicks the submit button.
